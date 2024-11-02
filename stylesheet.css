@@ -14,7 +14,35 @@ h3,
 h4 p {
   font-family: "Montserrat", sans-serif;
 }
+.hexagon-container {
+  margin-top: 10px;
+  position: relative;
+  width: 380px;
+  height: 400px;
+}
 
+.hexagon_1 {
+  fill: rgba(252, 218, 105, 0.6);
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 1;
+}
+
+.hexagon_2 {
+  fill: rgba(252, 218, 105, 0.6);
+  position: absolute;
+  top: 200px;
+  right: -350px;
+  z-index: 1;
+}
+.hexagon_3 {
+    fill: rgba(252, 218, 105, 0.6);
+    position: absolute;
+    top: 400px;
+    right: 180px;
+    z-index: 1;
+}
 /* Footer styles */
 footer {
   padding: 1rem 0;
@@ -31,11 +59,14 @@ footer {
   align-items: center;
   font-size: 0.9rem;
 }
-
-#profile {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 body {
   background-color: #ffffff;
@@ -161,7 +192,7 @@ body {
 .btn-primary:hover,
 .btn-secondary:hover,
 #mute-button:hover {
-    transform: scale(1.1); 
+  transform: scale(1.1);
 }
 .social-links {
   display: flex;
@@ -194,6 +225,8 @@ body {
 }
 
 .image-section {
+  margin-top: 50px;
+  height: 100vh;
   position: relative;
   width: 50%;
 }
